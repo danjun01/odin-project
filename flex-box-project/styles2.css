@@ -1,0 +1,115 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    color: #F9FAF8;
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+#header,
+#footer,
+#hero,
+#content,
+#quote,
+#call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 15%;
+}
+
+#header,
+#footer,
+#hero {
+    background-color: #4e5837;
+}
+
+#header {
+    justify-content: space-between;
+}
+
+#header-logo {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#hero {
+    padding: 32px 15%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.315)) , url("./images/forest.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#content,
+#call-to-action {
+    background-color: #866f52;
+}
+
+#content {
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#quote {
+    background-color: #795121;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 15%;
+}
+
+.tile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tile-img {
+    width: 150px;
+    height: 150px;
+    border: #4e5837;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.hero-img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+button {
+    background-color: #4e5837;
+    font-size: 14px;
+    padding: 4px 8px;
+    color: #F9FAF8;
+    border-radius: 3px;
+    border-style: none;
+}
