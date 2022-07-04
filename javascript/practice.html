@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let add7 = (num) => document.write(num + 7 + "<br>");
+            add7(1);
+        
+            let multiply = (a, b) => document.write(a * b + "<br>");
+            multiply(3, 2);
+            
+            function capitalize(str) {
+                if (typeof(str) === "string") {
+                    str = (str[0].toUpperCase()).concat(str.slice(1));
+                    document.write(str + "<br>");
+                }
+                else document.write("not a string" + "<br>");
+            }
+            capitalize('ajjJ');
+            capitalize(3);
+        
+            function lastLetter(str) {
+                if (typeof(str) === "string") {
+                    let length = str.length;
+                    document.write(str[length - 1] + "<br>");
+                }
+                else document.write("not a string" + "<br>");
+            }
+            lastLetter("asdf");
+            lastLetter(2);
+        </script>
+
+    </body>
+</html>
+
